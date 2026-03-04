@@ -11,7 +11,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="tracking-[0.2em] text-stone-800 uppercase"
+          className="tracking-[0.2em] text-stone-800 uppercas"
           style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem" }}
         >
           CCLIMgh

@@ -8,7 +8,7 @@ export function Coordinator() {
           {/* Image */}
           <div className="aspect-[4/5] overflow-hidden">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1739300293504-234817eead52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhZnJpY2FuJTIwd29tYW4lMjBwb3J0cmFpdCUyMGNvcnBvcmF0ZXxlbnwxfHx8fDE3NzIxMzY4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/seyram.jpeg"
               alt="Mrs Seyram Demawu Bugri"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />

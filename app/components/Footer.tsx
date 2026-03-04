@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="border-t border-stone-200 py-12 px-6">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p
-          className="text-stone-800 tracking-[0.2em] uppercase"
+          className="text-stone-800 tracking-[0.2em] uppercas"
           style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem" }}
         >
           CCLIMgh

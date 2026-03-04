@@ -3,21 +3,39 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Being part of CCLIM has transformed not just my marriage but my entire perspective on building a home. The sessions are deeply practical and rooted in faith.",
-    name: "Brenda A.",
-    role: "Banker",
+      "Any good home you see emanates from a good wife. Be genuinely good, following biblical principles and your home will be uniquely different.",
+    name: "Mrs. Pamela Addo",
+    role: "Realtor",
   },
   {
     quote:
-      "I walked in uncertain about the future of my marriage, and walked out with a renewed sense of purpose. This community is truly a gift to Christian women.",
-    name: "Ama K.",
-    role: "Corporate Executive",
+      "Love making, order and neatness are important keys to the heart of a married man. A wife who neglects these areas destabilizes her home.",
+    name: "Mr. Nii Noi Adumoah",
+    role: "Former Municipal Chief Executive, Adenta Municipality",
   },
   {
     quote:
-      "The wisdom shared here goes beyond theory. It is lived experience from women who understand the intersection of career, faith, and family.",
-    name: "Gifty M.",
-    role: "Entrepreneur",
+      "A child is like a blank hard drive given to you, whatever you have at the end of the day is what you recorded on the hard drive (take responsibility).",
+    name: "Mrs. Dogoe",
+    role: "Founder, Mothers Nest Montessori School",
+  },
+  {
+    quote:
+      "Your home is a place of influence and power; do not underestimate the impact a good home can have on the orientation of a whole nation.",
+    name: "Mrs. Yvonne Nduom",
+    role: "Coconut Grove Hotel",
+  },
+  {
+    quote:
+      "To be successful as a corporate married woman your home must first be well organized. When you master the art of managing your home well your work life will be exceptionally good.",
+    name: "Mrs. Pamela Addo",
+    role: "Realtor",
+  },
+  {
+    quote:
+      "Your husband is not a superman; he needs your help in every area of his life. Be proactive and wise as a wife.",
+    name: "Opanyin Kwadwo Kyere",
+    role: "Marriage Counselor",
   },
 ];
 
@@ -27,9 +45,9 @@ export function Testimonials() {
       <div className="max-w-5xl mx-auto">
         <p
           className="text-stone-500 uppercase tracking-[0.25em] mb-4"
-          style={{ fontSize: "0.7rem" }}
+          style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.7rem" }}
         >
-          Shared Experiences
+          Excerpts From Past Meetings
         </p>
         <h2
           className="text-white mb-16"
@@ -40,24 +58,24 @@ export function Testimonials() {
             lineHeight: 1.2,
           }}
         >
-          Stories from Our Community
+          Corporate Christian Ladies on Marriage
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-10">
-          {testimonials.map((t) => (
-            <div key={t.name} className="flex flex-col">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-32 mt-16">
+          {testimonials.map((t, i) => (
+            <div key={i} className="flex flex-col">
               <Quote size={20} className="text-stone-600 mb-6" />
               <p
                 className="text-stone-300 flex-1 mb-8"
-                style={{ fontSize: "0.95rem", lineHeight: 1.85 }}
+                style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", lineHeight: 1.85 }}
               >
                 {t.quote}
               </p>
               <div>
-                <p className="text-white" style={{ fontSize: "0.9rem" }}>
+                <p className="text-white" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.9rem" }}>
                   {t.name}
                 </p>
-                <p className="text-stone-500" style={{ fontSize: "0.8rem" }}>
+                <p className="text-stone-500" style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.8rem" }}>
                   {t.role}
                 </p>
               </div>

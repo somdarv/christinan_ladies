@@ -56,7 +56,7 @@ export function Topics() {
           {/* Image */}
           <div className="aspect-[4/5] overflow-hidden">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1553018440-8e05c070608a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbm90ZWJvb2slMjBwZW4lMjBtaW5pbWFsJTIwam91cm5hbHxlbnwxfHx8fDE3NzIxMzY4MTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="fam.jpg"
               alt="Journal and pen"
               className="w-full h-full object-cover"
             />
