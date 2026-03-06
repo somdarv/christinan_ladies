@@ -56,7 +56,7 @@ export function Topics() {
           {/* Image */}
           <div className="aspect-[4/5] overflow-hidden">
             <ImageWithFallback
-              src="fam.jpg"
+              src="family.jpg"
               alt="Journal and pen"
               className="w-full h-full object-cover"
             />
