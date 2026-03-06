@@ -6,7 +6,7 @@ export function Footer() {
           className="text-stone-800 tracking-[0.2em] uppercase"
           style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem" }}
         >
-          CCWIM
+          CCWIMgh
         </p>
         <div className="flex flex-col md:flex-row items-center gap-4 text-stone-400" style={{ fontSize: "0.8rem" }}>
           <a href="mailto:ccwimgh@gmail.com" className="hover:text-stone-600 transition-colors">
