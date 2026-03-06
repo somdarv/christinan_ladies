@@ -58,10 +58,21 @@ export function JoinUs() {
               ))}
             </ul>
 
-            <p className="text-stone-500 mb-10" style={{ fontSize: "0.85rem", lineHeight: 1.8 }}>
+            <p className="text-stone-500 mb-6" style={{ fontSize: "0.85rem", lineHeight: 1.8 }}>
               Because of the personal and sensitive nature of this initiative, we review each
               application with care. We will be in touch with those who fit the community we're
               creating. We will reach out to you in due time.
+            </p>
+
+            <p className="text-stone-500 mb-10" style={{ fontSize: "0.85rem", lineHeight: 1.8 }}>
+              For enquiries, reach us at{" "}
+              <a href="mailto:ccwimgh@gmail.com" className="text-stone-700 underline underline-offset-2 hover:text-stone-900">
+                ccwimgh@gmail.com
+              </a>{" "}
+              or on WhatsApp at{" "}
+              <a href="https://wa.me/233257441441" target="_blank" rel="noopener noreferrer" className="text-stone-700 underline underline-offset-2 hover:text-stone-900">
+                0257441441
+              </a>.
             </p>
 
             <a
