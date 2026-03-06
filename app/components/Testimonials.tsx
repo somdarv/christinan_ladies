@@ -58,8 +58,7 @@ export function Testimonials() {
             lineHeight: 1.2,
           }}
         >
-          Corporate Christian Ladies on Marriage
-        </h2>
+          From Past Resource Persons        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-32 mt-16">
           {testimonials.map((t, i) => (

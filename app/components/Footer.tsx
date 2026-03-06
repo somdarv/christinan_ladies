@@ -6,7 +6,7 @@ export function Footer() {
           className="text-stone-800 tracking-[0.2em] uppercas"
           style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem" }}
         >
-          CCLIMgh
+          CCLIM
         </p>
         <p className="text-stone-400" style={{ fontSize: "0.8rem" }}>
           &copy; 2026 Corporate Christian Ladies in Marriage. All rights reserved.
