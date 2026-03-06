@@ -9,7 +9,7 @@ export function Footer() {
           CCWIM
         </p>
         <p className="text-stone-400" style={{ fontSize: "0.8rem" }}>
-          &copy; 2026 Corporate Christian Ladies in Marriage. All rights reserved.
+          &copy; 2026 Corporate Christian Women in Marriage. All rights reserved.
         </p>
       </div>
     </footer>

@@ -32,7 +32,7 @@ export function Hero() {
         >
           Corporate Christian
           <br />
-          Ladies in Marriage
+          Women in Marriage
         </h1>
         <p className="text-white/70 max-w-xl mx-auto mb-10" style={{ fontSize: "1rem", lineHeight: 1.8 }}>
           Building godly marriages, restoring hope, and strengthening Christian homes through faith-based wisdom and community.
