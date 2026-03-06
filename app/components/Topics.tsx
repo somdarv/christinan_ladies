@@ -19,7 +19,7 @@ export function Topics() {
               className="text-stone-400 uppercase tracking-[0.25em] mb-4"
               style={{ fontSize: "0.7rem" }}
             >
-              What We Explore
+              Our Conversations
             </p>
             <h2
               className="text-stone-900 mb-10"
@@ -30,7 +30,7 @@ export function Topics() {
                 lineHeight: 1.2,
               }}
             >
-              Topics Discussed
+              Topics We Explore
             </h2>
 
             <ol className="space-y-5">
@@ -57,7 +57,7 @@ export function Topics() {
           <div className="aspect-[4/5] overflow-hidden">
             <ImageWithFallback
               src="family.jpg"
-              alt="Journal and pen"
+              alt="Young Family holding hands silhouette"
               className="w-full h-full object-cover"
             />
           </div>
