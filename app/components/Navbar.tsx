@@ -14,7 +14,7 @@ export function Navbar() {
           className="tracking-[0.2em] text-stone-800 uppercas"
           style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem" }}
         >
-          CCWIM
+          CCWIMgh
         </a>
 
         {/* Desktop links */}

@@ -8,7 +8,7 @@ export function Coordinator() {
           {/* Image */}
           <div className="aspect-[4/5] overflow-hidden">
             <ImageWithFallback
-              src="/seyram.jpeg"
+              src="/sey.jpeg"
               alt="Mrs Seyram Demawu Bugri"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
