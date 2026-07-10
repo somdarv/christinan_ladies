@@ -1,0 +1,41 @@
+name: Deploy to cPanel (server pulls + builds)
+
+# On push to main, SSH into Namecheap cPanel and have the SERVER pull the
+# latest code from GitHub, build the Next.js app, and restart Passenger.
+# No build artifacts are shipped from CI — the server builds its own copy.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-ccwim
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH → git pull, build, restart
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_USERNAME }}
+          key: ${{ secrets.CPANEL_SSH_KEY }}
+          port: "21098"
+          command_timeout: 20m
+          script: |
+            set -e
+            # Node lives only inside the cPanel Node.js app's virtualenv.
+            export PATH="$HOME/nodevenv/theccm/20/bin:$PATH"
+            # Clear the venv's production/NODE_PATH so devDeps install and the
+            # build resolves modules from the app's own real node_modules.
+            unset NODE_ENV NODE_PATH
+            cd "$HOME/theccm"
+            git fetch --depth=1 origin main
+            git reset --hard origin/main
+            npm ci --include=dev
+            npm run build
+            mkdir -p tmp && touch tmp/restart.txt
+            echo "Deployed $(git rev-parse --short HEAD)"
