@@ -32,10 +32,17 @@ jobs:
             # Clear the venv's production/NODE_PATH so devDeps install and the
             # build resolves modules from the app's own real node_modules.
             unset NODE_ENV NODE_PATH
+            # Cap native thread pools: Turbopack's Rust pool is sized to the
+            # host's ~23 CPUs and trips the CloudLinux LVE per-user thread
+            # limit (intermittent `spawn node EAGAIN`). Keep the build small.
+            export RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 \
+                   NEXT_TELEMETRY_DISABLED=1 NODE_OPTIONS=--max-old-space-size=1024
             cd "$HOME/theccm"
             git fetch --depth=1 origin main
             git reset --hard origin/main
-            npm ci --include=dev
+            git gc --prune=now --quiet || true
+            npm ci --include=dev --no-audit --no-fund
             npm run build
+            npm prune --omit=dev          # drop build-only deps from runtime
             mkdir -p tmp && touch tmp/restart.txt
             echo "Deployed $(git rev-parse --short HEAD)"
